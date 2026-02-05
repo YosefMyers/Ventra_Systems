@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ventra Systems - Engineered HVAC Air Filters for Residential, Commercial, and Industrial Use">
+    <title>Ventra Systems | Premium HVAC Air Filters</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header-container"></div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Premium HVAC Air Filters</h1>
+                <p>Engineered for consistent airflow, energy efficiency, and reliable supply</p>
+                <button class="cta-button" onclick="scrollToFilterFinder()">Find Your Filter</button>
+            </div>
+        </section>
+
+        <!-- Trust Signals -->
+        <section class="trust-signals">
+            <div class="trust-item">
+                <span class="trust-icon">✓</span>
+                <p>Made in USA</p>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">✓</span>
+                <p>Free Shipping</p>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">✓</span>
+                <p>Trusted by Commercial Facilities</p>
+            </div>
+        </section>
+
+        <!-- Filter Finder -->
+        <section class="filter-finder" id="filter-finder">
+            <h2>Filter Finder</h2>
+            <p class="subtitle">Find the perfect filter for your needs in 3 steps</p>
+            
+            <div class="finder-container">
+                <!-- Step 1: Room Type -->
+                <div class="finder-step" id="step-1">
+                    <h3>Step 1: Select Room Type</h3>
+                    <div class="button-group">
+                        <button class="option-button" data-type="residential">Residential</button>
+                        <button class="option-button" data-type="commercial">Commercial</button>
+                        <button class="option-button" data-type="industrial">Industrial</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Filter Size -->
+                <div class="finder-step" id="step-2" style="display: none;">
+                    <h3>Step 2: Select Filter Size</h3>
+                    <div class="size-selector">
+                        <select id="filter-size">
+                            <option value="">Choose a size...</option>
+                            <option value="16x25x1">16x25x1</option>
+                            <option value="16x25x4">16x25x4</option>
+                            <option value="20x25x1">20x25x1</option>
+                            <option value="20x25x4">20x25x4</option>
+                            <option value="custom">Custom Size</option>
+                        </select>
+                    </div>
+                    <button class="nav-button" onclick="previousStep()">Back</button>
+                </div>
+
+                <!-- Step 3: MERV Rating -->
+                <div class="finder-step" id="step-3" style="display: none;">
+                    <h3>Step 3: Select MERV Rating</h3>
+                    <p class="subtitle">Higher MERV ratings provide better filtration</p>
+                    <div class="button-group">
+                        <button class="merv-button" data-merv="8">MERV 8<br><small>Standard</small></button>
+                        <button class="merv-button" data-merv="11">MERV 11<br><small>Recommended</small></button>
+                        <button class="merv-button" data-merv="13">MERV 13<br><small>Premium</small></button>
+                    </div>
+                    <button class="nav-button" onclick="previousStep()">Back</button>
+                </div>
+
+                <!-- Step 4: Quantity & Review -->
+                <div class="finder-step" id="step-4" style="display: none;">
+                    <h3>Step 4: Quantity & Add to Cart</h3>
+                    <div class="review-box">
+                        <p><strong>Product:</strong> <span id="review-product"></span></p>
+                        <p><strong>Price:</strong> $<span id="review-price"></span></p>
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" min="1" max="100" value="1">
+                        </div>
+                        <p class="bulk-hint" id="bulk-hint" style="display: none;"><strong>💡 Buy 4+, Save 15%</strong></p>
+                    </div>
+                    <button class="cta-button" onclick="addToCart()">Add to Cart</button>
+                    <button class="nav-button" onclick="previousStep()">Back</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid" id="featured-products-grid"></div>
+        </section>
+
+        <!-- Bulk Upsell -->
+        <section class="bulk-upsell">
+            <h3>Bulk Orders & Business Accounts</h3>
+            <p>Need filters for multiple locations? Get volume discounts and streamlined procurement.</p>
+            <a href="business.html" class="link-button">Learn About Business Accounts</a>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <div id="footer-container"></div>
+
+    <!-- Bottom Navigation Component -->
+    <div id="bottom-nav-container"></div>
+
+    <!-- Cart Modal Component -->
+    <div id="cart-modal-container"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/filter-finder.js"></script>
+    <script src="assets/js/product-catalog.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
