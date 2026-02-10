@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQ | Ventra Systems</title>
+  <meta name="description" content="Common questions about MERV, carbon, HEPA, sizing, and replacement schedules." />
+  <link rel="icon" href="assets/product-placeholder.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Ventra Systems" /></a>
+    <nav class="navlinks" aria-label="Primary">
+      <a data-nav href="products.html">Products</a>
+      <a data-nav href="custom.html">Custom Size</a>
+      <a data-nav href="commercial.html">Commercial</a>
+      <div class="dropdown" data-dropdown>
+        <button class="dropbtn" data-dropbtn aria-expanded="false" aria-haspopup="true">Company <span aria-hidden="true">▾</span></button>
+        <div class="menu" role="menu">
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="faq.html">FAQ</a>
+          <a data-nav href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1>FAQ</h1>
+
+    <div class="card">
+      <h3>What MERV should I use?</h3>
+      <p>MERV 8–11 is typical for most homes. MERV 13 captures more, but can increase resistance depending on system and filter depth.</p>
+    </div>
+    <div class="card" style="margin-top:12px;">
+      <h3>When should I replace my filter?</h3>
+      <p>Commonly every 1–3 months depending on dust load, pets, occupancy, and system runtime.</p>
+    </div>
+    <div class="card" style="margin-top:12px;">
+      <h3>Do carbon filters remove odors?</h3>
+      <p>Yes—activated carbon can adsorb odors/VOCs. Capacity and dwell time matter; heavier carbon generally performs better.</p>
+    </div>
+    <div class="card" style="margin-top:12px;">
+      <h3>Do you offer custom sizes?</h3>
+      <p>Yes. Use the Custom Size page to submit dimensions and requirements.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container foot">
+    <div>© <span id="y"></span> Ventra Systems</div>
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <a href="products.html">Products</a>
+      <a href="custom.html">Custom</a>
+      <a href="commercial.html">Commercial</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+<script src="js/site.js"></script>
+</body>
+</html>
