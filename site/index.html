@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ventra Systems | Engineered Air Filters</title>
+  <meta name="description" content="High-performance pleated, carbon, and HEPA filters. Custom sizing, commercial programs, and fast delivery." />
+  <meta property="og:title" content="Ventra Systems" />
+  <meta property="og:description" content="Engineered air filters. Custom sizing. Commercial programs." />
+  <link rel="icon" href="assets/product-placeholder.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Ventra Systems home">
+      <img src="assets/logo.svg" alt="Ventra Systems" />
+    </a>
+
+    <nav class="navlinks" aria-label="Primary">
+      <a data-nav href="products.html">Products</a>
+      <a data-nav href="custom.html">Custom Size</a>
+      <a data-nav href="commercial.html">Commercial</a>
+
+      <div class="dropdown" data-dropdown>
+        <button class="dropbtn" data-dropbtn aria-expanded="false" aria-haspopup="true">
+          Company <span aria-hidden="true">▾</span>
+        </button>
+        <div class="menu" role="menu">
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="faq.html">FAQ</a>
+          <a data-nav href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container herogrid">
+      <div class="hcard">
+        <div class="hbody">
+          <span class="pill">Engineered filtration • Built for performance</span>
+          <h1>Air filters that reduce strain, improve air, and ship fast.</h1>
+          <p>
+            Ventra Systems builds pleated, carbon, and HEPA options with a focus on airflow efficiency,
+            fit, and consistent quality control.
+          </p>
+
+          <div class="ctaRow">
+            <a class="btn primary" href="products.html">Shop standard sizes</a>
+            <a class="btn" href="custom.html">Order custom size</a>
+            <a class="btn ghost" href="commercial.html">Commercial programs</a>
+          </div>
+
+          <div class="kpis">
+            <div class="kpi"><b>Lower pressure drop</b><span>Designed for airflow</span></div>
+            <div class="kpi"><b>Reliable fit</b><span>Standard + custom</span></div>
+            <div class="kpi"><b>Consistent QC</b><span>Spec-driven output</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hcard">
+        <div class="hbody">
+          <h2>Quick selector</h2>
+          <p>Choose a filter family, then refine by size and use-case.</p>
+
+          <div class="grid3" style="grid-template-columns:1fr; margin-top:12px;">
+            <div class="card">
+              <h3>Pleated (MERV 8–13)</h3>
+              <p>Best all-around option for homes and light commercial.</p>
+              <div class="ctaRow"><a class="btn" href="products.html#pleated">View pleated</a></div>
+            </div>
+            <div class="card">
+              <h3>Carbon</h3>
+              <p>Odor + VOC reduction with activated carbon layers.</p>
+              <div class="ctaRow"><a class="btn" href="products.html#carbon">View carbon</a></div>
+            </div>
+            <div class="card">
+              <h3>HEPA</h3>
+              <p>High capture efficiency for specialized applications.</p>
+              <div class="ctaRow"><a class="btn" href="products.html#hepa">View HEPA</a></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid3">
+        <div class="card">
+          <h3>What we optimize</h3>
+          <p>Media choice, pleat geometry, and frame integrity to balance capture and airflow.</p>
+        </div>
+        <div class="card">
+          <h3>Who we serve</h3>
+          <p>Homeowners, property managers, contractors, schools, and commercial developers.</p>
+        </div>
+        <div class="card">
+          <h3>How we win</h3>
+          <p>Clear specs, fast iteration, and predictable output quality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container foot">
+    <div>© <span id="y"></span> Ventra Systems</div>
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <a href="products.html">Products</a>
+      <a href="custom.html">Custom</a>
+      <a href="commercial.html">Commercial</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+<script src="js/site.js"></script>
+</body>
+</html>
