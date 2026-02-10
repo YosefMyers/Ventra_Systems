@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://yosefmyers.github.io/Ventra_Systems/sitemap.xml
