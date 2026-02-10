@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products | Ventra Systems</title>
+  <meta name="description" content="Pleated, carbon, and HEPA filters. Standard sizes and custom builds." />
+  <link rel="icon" href="assets/product-placeholder.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Ventra Systems home">
+      <img src="assets/logo.svg" alt="Ventra Systems" />
+    </a>
+
+    <nav class="navlinks" aria-label="Primary">
+      <a data-nav href="products.html">Products</a>
+      <a data-nav href="custom.html">Custom Size</a>
+      <a data-nav href="commercial.html">Commercial</a>
+
+      <div class="dropdown" data-dropdown>
+        <button class="dropbtn" data-dropbtn aria-expanded="false" aria-haspopup="true">
+          Company <span aria-hidden="true">▾</span>
+        </button>
+        <div class="menu" role="menu">
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="faq.html">FAQ</a>
+          <a data-nav href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1>Products</h1>
+    <p>Starter catalog. Add SKUs, pricing, and variants next.</p>
+
+    <div class="section" id="pleated">
+      <h2>Pleated (MERV 8–13)</h2>
+      <div class="grid3">
+        <div class="card"><h3>MERV 8</h3><p>Everyday filtration, strong airflow.</p></div>
+        <div class="card"><h3>MERV 11</h3><p>Balanced capture + airflow.</p></div>
+        <div class="card"><h3>MERV 13</h3><p>Higher capture; confirm HVAC compatibility.</p></div>
+      </div>
+    </div>
+
+    <div class="section" id="carbon">
+      <h2>Carbon</h2>
+      <div class="grid3">
+        <div class="card"><h3>Carbon Pleated</h3><p>Odor/VOC reduction.</p></div>
+        <div class="card"><h3>Heavy Carbon</h3><p>More carbon for stronger odor control.</p></div>
+        <div class="card"><h3>Carbon Add-on</h3><p>Simple add-on pad option.</p></div>
+      </div>
+    </div>
+
+    <div class="section" id="hepa">
+      <h2>HEPA</h2>
+      <div class="grid3">
+        <div class="card"><h3>HEPA Panel</h3><p>Specialty applications.</p></div>
+        <div class="card"><h3>HEPA H13</h3><p>Typical HEPA grade depending on build.</p></div>
+        <div class="card"><h3>Custom HEPA</h3><p>Built to spec for fit and airflow.</p></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container foot">
+    <div>© <span id="y"></span> Ventra Systems</div>
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <a href="products.html">Products</a>
+      <a href="custom.html">Custom</a>
+      <a href="commercial.html">Commercial</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+<script src="js/site.js"></script>
+</body>
+</html>
