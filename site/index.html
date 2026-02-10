@@ -17,25 +17,41 @@
       <img src="assets/logo.svg" alt="Ventra Systems" />
     </a>
 
-    <nav class="navlinks" aria-label="Primary">
+    <div class="navRight">
+      <nav class="navlinks" aria-label="Primary">
+        <a data-nav href="products.html">Products</a>
+        <a data-nav href="custom.html">Custom Size</a>
+        <a data-nav href="commercial.html">Commercial</a>
+
+        <div class="dropdown" data-dropdown>
+          <button class="dropbtn" data-dropbtn aria-expanded="false" aria-haspopup="true">
+            Company <span aria-hidden="true">▾</span>
+          </button>
+          <div class="menu" role="menu">
+            <a data-nav href="about.html">About</a>
+            <a data-nav href="faq.html">FAQ</a>
+            <a data-nav href="contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <button class="hamburger" data-hamburger aria-expanded="false" aria-label="Open menu">
+        Menu
+      </button>
+    </div>
+  </div>
+
+  <div class="mobileMenu" data-mobile-menu>
+    <div class="container">
       <a data-nav href="products.html">Products</a>
       <a data-nav href="custom.html">Custom Size</a>
       <a data-nav href="commercial.html">Commercial</a>
-
-      <div class="dropdown" data-dropdown>
-        <button class="dropbtn" data-dropbtn aria-expanded="false" aria-haspopup="true">
-          Company <span aria-hidden="true">▾</span>
-        </button>
-        <div class="menu" role="menu">
-          <a data-nav href="about.html">About</a>
-          <a data-nav href="faq.html">FAQ</a>
-          <a data-nav href="contact.html">Contact</a>
-        </div>
-      </div>
-    </nav>
+      <a data-nav href="about.html">About</a>
+      <a data-nav href="faq.html">FAQ</a>
+      <a data-nav href="contact.html">Contact</a>
+    </div>
   </div>
 </header>
-
 <main>
   <section class="hero">
     <div class="container herogrid">
