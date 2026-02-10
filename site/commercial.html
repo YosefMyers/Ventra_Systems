@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Commercial | Ventra Systems</title>
+  <meta name="description" content="Commercial filter programs for property managers, contractors, and facilities." />
+  <link rel="icon" href="assets/product-placeholder.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Ventra Systems" /></a>
+    <nav class="navlinks" aria-label="Primary">
+      <a data-nav href="products.html">Products</a>
+      <a data-nav href="custom.html">Custom Size</a>
+      <a data-nav href="commercial.html">Commercial</a>
+      <div class="dropdown" data-dropdown>
+        <button class="dropbtn" data-dropbtn aria-expanded="false" aria-haspopup="true">Company <span aria-hidden="true">▾</span></button>
+        <div class="menu" role="menu">
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="faq.html">FAQ</a>
+          <a data-nav href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1>Commercial Programs</h1>
+    <p>For property managers, contractors, schools, and facilities teams.</p>
+
+    <div class="grid3">
+      <div class="card"><h3>Bulk pricing</h3><p>Volume tiers and predictable replenishment.</p></div>
+      <div class="card"><h3>Standardization</h3><p>Reduce SKU sprawl; lock specs by site.</p></div>
+      <div class="card"><h3>Custom builds</h3><p>Odd sizes, special frames, and airflow constraints.</p></div>
+    </div>
+
+    <div class="section">
+      <a class="btn primary" href="contact.html">Request a commercial quote</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container foot">
+    <div>© <span id="y"></span> Ventra Systems</div>
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <a href="products.html">Products</a>
+      <a href="custom.html">Custom</a>
+      <a href="commercial.html">Commercial</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+<script src="js/site.js"></script>
+</body>
+</html>
