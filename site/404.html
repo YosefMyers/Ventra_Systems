@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Page Not Found | Ventra Systems</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="assets/product-placeholder.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Ventra Systems home">
+      <img src="assets/logo.svg" alt="Ventra Systems" />
+    </a>
+
+    <nav class="navlinks" aria-label="Primary">
+      <a href="products.html">Products</a>
+      <a href="custom.html">Custom Size</a>
+      <a href="commercial.html">Commercial</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="hcard">
+      <div class="hbody">
+        <h1>404 — Page not found</h1>
+        <p>The page you’re looking for doesn’t exist or was moved.</p>
+        <div class="ctaRow">
+          <a class="btn primary" href="index.html">Back to home</a>
+          <a class="btn" href="products.html">Browse products</a>
+          <a class="btn ghost" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container foot">
+    <div>© <span id="y"></span> Ventra Systems</div>
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <a href="products.html">Products</a>
+      <a href="custom.html">Custom</a>
+      <a href="commercial.html">Commercial</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
